@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/favicon">
+    <title>Holberton SmilingSchool - JavaScript</title>
+    <meta name="description" content="Bootstrap is a free and open-source CSS framework">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="holberton_school-icon/style.css">
+
+</head>
+
+<body class="text-white">
+<!-- Skip links -->
+<nav aria-label="Skip links">
+    <ul class="off-screen">
+        <li>
+            <a href="#a11y-primary-nav" class="skip-link">Skip to primary navigation</a>
+        </li>
+        <li>
+            <a href="#a11y-main-content" class="skip-link">Skip to main content</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<header class="homepage container-fluid">
+    <div class="container-lg">
+        <!-- Navbar -->
+        <nav class="d-flex flex-column flex-sm-row pt-4" id="a11y-primary-nav" tabindex="-1">
+            <!-- Brand -->
+            <div class="d-flex flex-column flex-sm-row col-sm-6 align-items-center">
+                <img class="m-2" src="images/smile_off.png" height="30px" width="40px">
+                <img class="m-2" src="images/logo.png" height="30px" width="115px">
+            </div>
+            <!-- Hamburger menu -->
+            <button class="navbar-toggler float-left position-absolute d-sm-none" type="button"
+                    data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation menu">
+                <span class="navbar-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="navbarContent">
+                <ul class="navbar-nav text-uppercase ml-auto flex-sm-row align-items-center font-weight-bold">
+                    <li class="navbar-item">
+                        <a class="nav-link text-white mx-5" href="courses.html">Courses</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link text-white mx-5" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link text-white mx-5" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Hero section -->
+        <div class="position-relative pt-5 mt-5">
+            <div class="row">
+                <div class="col text-center pt-5 mt-5">
+                    <h1 class="font-weight-bold display-1">Get schooled</h1>
+                    <div class="row justify-content-center">
+                        <p class="text-uppercase font-weight-bold mr-5 ml-2">Smiles</p>
+                        <p class="text-uppercase font-weight-bold mr-5 ml-2">Grin</p>
+                        <p class="text-uppercase font-weight-bold mr-5 ml-2">Laugh</p>
+                    </div>
+                    <button
+                            class="btn btn-secondary rounded-pill text-uppercase font-weight-bold btn-shadow px-4 py-2 m-3"
+                            href="#">Register for free</button>
+                    <h2 class="font-weight-light mt-5 pt-5"><span class="font-weight-bold purple">Learn</span> from
+                        the pros</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Awards section -->
+        <div class="row mt-5 py-5">
+            <div class="col-md-3 col-6">
+                <img class="card-img-top img-fluid rounded-circle px-3" src="images/profile_1.jpg">
+                <div class="text-center">
+                    <h1 class="font-weight-bold lead pt-4">Phillip Massey</h1>
+                    <p class="card-text">« Smile of the year »<br>2018-2019</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <img class="card-img-top img-fluid rounded-circle px-3" src="images/profile_2.jpg">
+                <div class="text-center">
+                    <h1 class="font-weight-bold lead pt-4">Nannie Lawrence</h1>
+                    <p>Best « little smile »<br>2017</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <img class="card-img-top img-fluid rounded-circle px-3" src="images/profile_3.jpg">
+                <div class="text-center">
+                    <h1 class="font-weight-bold lead pt-4">Bruce Walters</h1>
+                    <p class="card-text">Best « Friend Smile »<br>live performance 2019</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <img class="card-img-top img-fluid rounded-circle px-3" src="images/profile_4.jpg">
+                <div class="text-center">
+                    <h1 class="font-weight-bold lead pt-4">Henry Hughes</h1>
+                    <p class="card-text">« 24hr smiles » winner<br>2016-2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="a11y-main-content" tabindex="-1">
+    <!-- Testimonals -->
+    <section class="container-fluid purple-bg py-5">
+        <div class="container-lg testimonals"></div>
+    </section>
+    <!--Most popular tutorials -->
+    <section class="text-dark mb-5 container-fluid">
+        <h1 class="text-center font-weight-light my-5 py-5">Most <span
+                class="font-weight-bold purple">popular</span> tutorials</h1>
+        <div id="popular" class="container"></div>
+    </section>
+
+    <!-- Free Membership -->
+    <section class="dark-bg container-fluid">
+        <h1 class="text-center font-weight-light py-5"><span class="font-weight-bold purple">Free </span> membership
+        </h1>
+        <div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 text-center p-4">
+                    <img src="images/smile_on.png" class="smile">
+                    <h1 class="lead font-weight-bold py-3">Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 text-center p-4">
+                    <img src="images/smile_on.png" class="smile">
+                    <h1 class="lead font-weight-bold py-3">Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 text-center p-4">
+                    <img src="images/smile_on.png" class="smile">
+                    <h1 class="lead font-weight-bold py-3">Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 text-center p-4">
+                    <img src="images/smile_on.png" class="smile">
+                    <h1 class="lead font-weight-bold py-3">Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center pb-5">
+            <button class="btn btn-secondary rounded-pill text-center font-weight-bold px-4 py-2" href="#"
+                    aria-label="Register">REGISTER FOR FREE</button>
+        </div>
+    </section>
+
+
+    <!-- Latest Videos -->
+
+    <section class="text-dark container-fluid">
+        <h1 class="text-center font-weight-light my-5 py-5"><span class="font-weight-bold purple">Latest</span>
+            tutorials</h1>
+        <div class="container pb-5" id="latest"></div>
+    </section>
+</main>
+
+<!--Footer -->
+<footer class="page-footer dark-bg pt-4">
+    <div class="container-lg">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center my-5">
+            <div class="mt-4">
+                <img src="images/smile_off.png" height="30px" width="35px" alt="">
+                <img class="mx-3" src="images/logo.png" alt="">
+            </div>
+            <div class="d-flex mt-4">
+                <div class="row">
+                    <ul class="list-group list-group-horizontal list-unstyled">
+                        <li class="ml-3">
+                            <a class="text-decoration-none" href="https://www.facebook.com/HolbertonSchool/"
+                               aria-label="Facebook">
+                                <span class="text-white holberton_school-icon-ic_facebook display-4"></span>
+                            </a>
+                        </li>
+                        <li class="ml-3">
+                            <a class="text-decoration-none" href="https://twitter.com/holbertonschool"
+                               aria-label="Twitter">
+                                <span class="text-white holberton_school-icon-ic_twitter display-4"></span>
+                            </a>
+                        </li>
+                        <li class="ml-3">
+                            <a class="text-decoration-none" href="https://www.instagram.com/holbertonschool/"
+                               aria-label="Instagram">
+                                <span class="text-white holberton_school-icon-ic_instagram display-4"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-muted small pb-5 mb-0">&copy;smileschool 2020</p>
+</footer>
+
+</body>
+
+</html>

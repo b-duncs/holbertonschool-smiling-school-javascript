@@ -1,0 +1,165 @@
+/* Variables
+   ============================= */
+
+:root {
+    --font-family: 'Source Sans Pro', serif;
+    --color-white: #FFFFFF;
+    --color-dark: #071629;
+    --color-gray: #979797;
+    --color-purple: #C271FF;
+}
+
+
+/* Base
+   ============================= */
+
+body {
+    font-family: var(--font-family) !important;
+}
+
+.off-screen {
+    left: -100vw;
+    position: absolute;
+}
+
+/* Buttons */
+
+.btn, .btn:hover, .btn:focus {
+    background-color: var(--color-purple) !important;
+    border-color: var(--color-purple) !important;
+}
+
+.btn:hover, .btn:focus {
+    opacity: 0.9;
+}
+
+.btn-shadow {
+    box-shadow: 0 0 10px 5px gray;
+}
+
+/* Navigation Links */
+
+li a {
+    color: var(--color-dark);
+}
+
+li a:hover, li a:focus {
+    color: var(--color-purple) !important;
+    text-decoration: none;
+}
+
+.current:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-white);
+}
+
+/*** 2. LAYOUT ***/
+
+/* Backgrounds
+   ============================= */
+
+.homepage {
+    background-image: url('images/pic_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.pricing {
+    background-image: url('images/pic_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.courses {
+    background-image: url('images/pic_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Colors
+   ============================= */
+
+.purple-bg {
+    background-color: var(--color-purple) !important;
+}
+
+.dark-bg {
+    background-color: var(--color-dark);
+}
+
+.purple {
+    color: var(--color-purple);
+}
+
+.border-gray {
+    border-color: var(--color-gray) !important;
+}
+
+/* Glyphs
+   ============================= */
+
+/* Navbar */
+
+.navbar-icon:before {
+    font-family: 'holberton_school-icon';
+    content: "\e911";
+    color: var(--color-white);
+}
+
+/* Courses Form */
+
+
+.smileon{
+    width: 3.75rem;
+}
+
+[class^="holberton_school-icon-search_"], [class*=" holberton_school-icon-"] {
+    width: 1.5rem;
+    outline: 0 !important;
+    opacity: .7 !important;
+    color: var(--color-dark);
+}
+
+.play{
+    width: 40%;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.check {
+    font-size: 2.5rem;
+}
+
+/* Courses Form
+   ============================= */
+
+/* Search */
+
+.search {
+    outline: 0;
+    opacity: .7;
+}
+
+::placeholder {
+    color: white;
+}
+
+/* Dropdown */
+
+.dropdown {
+    background-color: var(--color-white);
+}
+
+.dropdown .btn {
+    background-color: var(--color-purple) !important;
+    color: var(--color-white);
+    opacity: .7;
+}
